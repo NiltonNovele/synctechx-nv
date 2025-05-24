@@ -33,7 +33,7 @@ const projects: Project[] = [
       "Plataforma para melhor rastreio de pacientes e receitas medicas.",
     imageUrl: "/carepulse.png",
     tags: ["REST API", "Express", "PostgreSQL"],
-    link: "https://paysync.synctechx.com",
+    link: "https://carepulse.synctechx.com",
   },
   {
     title: "AMECC",
@@ -41,7 +41,7 @@ const projects: Project[] = [
       "Plataforma para a Associação Moçambicana de Estudantes a Cidade do Cabo com diversas funcionalidades.",
     imageUrl: "/amecc.png",
     tags: ["TailwindCSS", "Next.Js", "Express"],
-    link: "https://https://amecc.vercel.app",
+    link: "https://amecc.vercel.app",
   },
 ];
 </script>
