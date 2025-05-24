@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import { ref } from "vue";
-
+import { ref, computed } from "vue";
 import { useColorMode } from "@vueuse/core";
-const mode = useColorMode();
-mode.value = "dark";
+
+const mode = useColorMode(); // mode is a Ref<'light' | 'dark' | 'auto'>
+const currentMode = computed(() => mode.value); // Use computed for template binding
 
 import {
   NavigationMenu,
@@ -40,22 +40,10 @@ interface FeatureProps {
 }
 
 const routeList: RouteProps[] = [
-  {
-    href: "#depoimentos",
-    label: "Depoimentos",
-  },
-  {
-    href: "#equipa",
-    label: "Equipa",
-  },
-  {
-    href: "#contacto",
-    label: "Contacto",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
-  },
+  { href: "#depoimentos", label: "Depoimentos" },
+  { href: "#equipa", label: "Equipa" },
+  { href: "#contacto", label: "Contacto" },
+  { href: "#faq", label: "FAQ" },
 ];
 
 const featureList: FeatureProps[] = [
@@ -82,8 +70,8 @@ const isOpen = ref<boolean>(false);
 <template>
   <header
     :class="{
-      'shadow-light': mode.value === 'light',
-      'shadow-dark': mode.value === 'dark',
+      'shadow-light': currentMode === 'light',
+      'shadow-dark': currentMode === 'dark',
       'w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card shadow-md': true,
     }"
   >
@@ -175,17 +163,19 @@ const isOpen = ref<boolean>(false);
 
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
-            <Button
-              v-for="{ href, label } in routeList"
-              :key="label"
-              as-child
-              variant="ghost"
-              class="justify-start text-base"
-            >
-              <a :href="href">
-                {{ label }}
-              </a>
-            </Button>
+            <div class="flex">
+              <Button
+                v-for="{ href, label } in routeList"
+                :key="label"
+                as-child
+                variant="ghost"
+                class="justify-start text-base"
+              >
+                <a :href="href">
+                  {{ label }}
+                </a>
+              </Button>
+            </div>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
