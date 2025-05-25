@@ -29,7 +29,7 @@ const teamList: TeamProps[] = [
     imageUrl: "/nilton.jpeg",
     firstName: "Nilton",
     lastName: "Novele",
-    positions: ["Desenvolvedor"],
+    positions: ["Líder de Tecnologia"],
     socialNetworks: [
       {
         name: "LinkedIn",
@@ -49,7 +49,7 @@ const teamList: TeamProps[] = [
     imageUrl: "/bionda1.png",
     firstName: "Bionda",
     lastName: "Shirley",
-    positions: ["Marketing"],
+    positions: ["Líder de Marketing"],
     socialNetworks: [
       {
         name: "LinkedIn",
@@ -65,7 +65,7 @@ const teamList: TeamProps[] = [
     imageUrl: "/jumpex.jpg",
     firstName: "Henzel",
     lastName: "Tibana",
-    positions: ["Operações"],
+    positions: ["Líder de Operações"],
     socialNetworks: [
       {
         name: "LinkedIn",
