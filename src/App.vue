@@ -13,6 +13,7 @@ import Community from "./components/Community.vue";
 import Contact from "./components/Contact.vue";
 import FAQ from "./components/FAQ.vue";
 import Footer from "./components/Footer.vue";
+import Blog from "./components/Blog.vue";
 </script>
 
 <template>
@@ -27,6 +28,7 @@ import Footer from "./components/Footer.vue";
   <Team />
   <Community />
   <Pricing />
+  <Blog />
   <Contact />
   <FAQ />
   <Footer />
