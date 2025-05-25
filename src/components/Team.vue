@@ -45,22 +45,22 @@ const teamList: TeamProps[] = [
       },
     ],
   },
-  // {
-  //   imageUrl: "/kiana.jpeg",
-  //   firstName: "Kiana",
-  //   lastName: "Joaquim",
-  //   positions: ["Marketing"],
-  //   socialNetworks: [
-  //     {
-  //       name: "LinkedIn",
-  //       url: "https://www.linkedin.com/in/kiana-joaquim-33663b359/",
-  //     },
-  //     {
-  //       name: "X",
-  //       url: "https://x.com/",
-  //     },
-  //   ],
-  // },
+  {
+    imageUrl: "/bionda1.png",
+    firstName: "Bionda",
+    lastName: "Shirley",
+    positions: ["Marketing"],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/",
+      },
+      {
+        name: "X",
+        url: "https://x.com/Biondashirley05",
+      },
+    ],
+  },
   {
     imageUrl: "/jumpex.jpg",
     firstName: "Henzel",
@@ -78,14 +78,14 @@ const teamList: TeamProps[] = [
     ],
   },
   // {
-  //   imageUrl: "/john.png",
-  //   firstName: "Anderson",
-  //   lastName: "Manjate",
-  //   positions: ["Porta-voz Representante"],
+  //   imageUrl: "/kiana.jpeg",
+  //   firstName: "Kiana",
+  //   lastName: "Joaquim",
+  //   positions: ["Gestora de Projetos"],
   //   socialNetworks: [
   //     {
   //       name: "LinkedIn",
-  //       url: "https://www.linkedin.com/in/anderson-joão-manjate-75abaa31a/",
+  //       url: "https://www.linkedin.com/in",
   //     },
   //   ],
   // },
@@ -112,9 +112,9 @@ const socialIcon = (socialName: string) => {
         Equipe
       </h2>
 
-      <!-- <h2 class="text-3xl md:text-4xl text-center font-bold">
-        A equipe da champions
-      </h2> -->
+      <h2 class="text-3xl md:text-4xl text-center font-bold">
+        O Elenco principal
+      </h2>
     </div>
 
     <div
