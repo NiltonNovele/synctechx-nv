@@ -33,7 +33,7 @@ const FAQList: FAQProps[] = [
     value: "item-3",
   },
   {
-    question: "Como faco para contactar a SyncTechX?",
+    question: "Como faço para contactar a SyncTechX?",
     answer:
       "Através do e-mail: contacto@synctechx.com; Através do número (+258) 84 752-9665; Deixe-nos uma mensagem com a sua preocupação no formulário abaixo! A equipe da Synctech leva de 5 a 20 horas para responder a qualquer inquérito.",
     value: "item-4",

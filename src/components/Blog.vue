@@ -4,7 +4,6 @@
       Blog
     </h1>
 
-    <!-- Lista de Artigos -->
     <div v-if="!selectedPost" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       <div
         v-for="post in blogPosts"
@@ -37,7 +36,6 @@
       </div>
     </div>
 
-    <!-- Artigo Completo -->
     <div v-else class="max-w-3xl mx-auto">
       <button
         @click="selectedPost = null"
@@ -69,16 +67,6 @@ import { ref } from "vue";
 const selectedPost = ref(null);
 
 const blogPosts = [
-  //   {
-  //     id: 1,
-  //     title: "Why Vue 3 is Awesome",
-  //     date: "May 25, 2025",
-  //     author: "Nilton Novele",
-  //     excerpt:
-  //       "Vue 3 introduces Composition API, better performance, and more flexibility...",
-  //     full: `Vue 3 introduces the Composition API, which allows you to write more flexible and reusable code. It also improves performance and tree-shaking for smaller bundle sizes. Vue 3 supports better TypeScript integration and includes new features like <Teleport>, <Suspense>, and Fragment support.\n\nThis means your Vue apps can now be faster, leaner, and easier to maintain — a big win for developers building complex interfaces.`,
-  //     image: "https://source.unsplash.com/600x400/?vue,code",
-  //   },
   {
     id: 4,
     title: "Como validar a sua ideia de startup rapidamente",
@@ -108,10 +96,8 @@ Ouça o que os utilizadores dizem, melhore o seu produto e volte a testar.
 Validar cedo permite ajustar o rumo, poupar recursos e aumentar as hipóteses de sucesso da sua startup.
 
 Lembre-se: o mais importante é resolver um problema real com uma solução que as pessoas realmente querem usar.`,
-
     image: "/blog2.jpg",
   },
-
   {
     id: 3,
     title: "Ter ideias...",
