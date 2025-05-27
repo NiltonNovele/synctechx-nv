@@ -77,18 +77,18 @@ const teamList: TeamProps[] = [
       // },
     ],
   },
-  // {
-  //   imageUrl: "/kiana.jpeg",
-  //   firstName: "Kiana",
-  //   lastName: "Joaquim",
-  //   positions: ["Gestora de Projetos"],
-  //   socialNetworks: [
-  //     {
-  //       name: "LinkedIn",
-  //       url: "https://www.linkedin.com/in",
-  //     },
-  //   ],
-  // },
+  {
+    imageUrl: "/farley.jpg",
+    firstName: "Alicio Lino",
+    lastName: "Mabjaia",
+    positions: ["Líder de Relações Externas"],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/al%C3%ADcio-lino-89b983347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    ],
+  },
 ];
 
 const socialIcon = (socialName: string) => {
