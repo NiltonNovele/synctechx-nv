@@ -78,14 +78,14 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "/farley.jpg",
-    firstName: "Alicio Lino",
-    lastName: "Mabjaia",
+    imageUrl: "/manjate.jpg",
+    firstName: "Anderson",
+    lastName: "Manjate",
     positions: ["Líder de Relações Externas"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/al%C3%ADcio-lino-89b983347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        url: "https://www.linkedin.com/in/anderson-joão-manjate-75abaa31a/",
       },
     ],
   },
