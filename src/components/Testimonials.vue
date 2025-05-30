@@ -117,7 +117,6 @@ const reviewList: ReviewProps[] = [
             <CardHeader>
               <div class="flex flex-row items-center gap-4">
                 <Avatar>
-                  <AvatarImage :src="review.image" :alt="review.name" />
                   <AvatarFallback>{{ review.name[0] }}</AvatarFallback>
                 </Avatar>
 
